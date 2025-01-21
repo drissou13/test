@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Windows 10 test</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Windows 10 - Using CSS &amp; JS Only</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div id="window" class="window">
+    <div class="icon-computer text-center" id="icon-computer" ondblclick="opencom()">
+      <img src="https://mohamedelghandour.github.io/windows-10/img/thumb_14339670430This_PC.png" class="img-responsive">
+      <p>This PC</p>
+    </div>
+    <section class="option-box">
+      <div class="color-box">
+        <h4> just me </h4>
+        <!--<video class="center-block" width="360" height="" controls>
+                        <source src="img/myExplain_2.mp4" type="video/mp4">
+                        <source src="img/myExplain_2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                </video>-->
+        <div style="position:relative;height:0;padding-bottom:56.25%;width: 400px;"><iframe src="https://www.youtube.com/embed/m2WQkX5OThI?si=ztLR4LlZ11eEq2fe"" style=" position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
+        <a class="btn btn-primary center-block text-center" onclick="openabout()">About Me</a>
+      </div>
+      <i class="fa fa-gear fa-3x gear-check"></i>
+    </section>
+    <div class="overlay-computer" id="overlay-computer">
+      <div class="fluid-container">
+        <div class="first-row-win" id="first-row-win">
+          <div class="left">
+            <i class="fa fa-hdd-o"></i>
+            <i class="fa fa-file-o"></i>
+            <i class="fa fa-folder"></i>
+            <span>Front End</span>
+          </div>
+          <div class="right">
+            <i class="fa fa-window-minimize" onclick="closeopencom()"></i>
+            <i class="fa fa-window-restore" onclick="returncom()" id="returncam" style="display:none;"></i>
+            <i class="fa fa-window-maximize" onclick="upercom()" id="upercam"></i>
+            <i class="fa fa-times" onclick="closecom()"></i>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="second-row-win">
+          <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a class="home-a" href="#home" aria-controls="home" role="tab" data-toggle="tab">File</a></li>
+              <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Home</a></li>
+              <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Share</a></li>
+              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">View</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-envelope-open fa-2x"></i>
+                  <p>Mail</p>
+                </div>
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-file-code-o  fa-2x"></i>
+                  <p>Code</p>
+                </div>
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-sticky-note-o fa-2x"></i>
+                  <p>Note</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="profile">
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-user-circle fa-2x"></i>
+                  <p>User</p>
+                </div>
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-battery-4  fa-2x"></i>
+                  <p>battery</p>
+                </div>
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-book fa-2x"></i>
+                  <p>Book</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="messages">
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-car fa-2x"></i>
+                  <p>Car</p>
+                </div>
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-camera-retro  fa-2x"></i>
+                  <p>cam</p>
+                </div>
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-building fa-2x"></i>
+                  <p>build</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="settings">
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-cubes fa-2x"></i>
+                  <p>cubes</p>
+                </div>
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-coffee fa-2x"></i>
+                  <p>coffee</p>
+                </div>
+                <div class="col-xs-1 text-center">
+                  <i class="fa fa-film fa-2x"></i>
+                  <p>film</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="third-row-win">
+          <div class="col-xs-2">
+            <i class="fa fa-long-arrow-left"></i>
+            <i class="fa fa-long-arrow-right"></i>
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-arrow-up"></i>
+          </div>
+          <div class="col-xs-7">
+            <div class="path-input">
+              <span class="path-icon-input">This pc</span>
+              <span class="path-icon-input">dbprod (E:)</span>
+              <span class="path-icon-input">programming</span>
+              <span class="path-icon-input">Front End</span>
+            </div>
+            <i class="fa fa-hdd-o path-icon"></i>
+            <i class="fa fa-repeat path-icon-1"></i>
+            <i class="path-icon-2">|</i>
+          </div>
+          <div class="col-xs-3">
+            <input class="search-input" type="text" placeholder="Search">
+            <i class="fa fa-search path-icon-1"></i>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="fourd-row-win">
+          <div class="col-xs-3" style="border-right: 1px solid #808080;">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <span class="fa fa-star">Quick access</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <p><span class="fa fa-desktop">Desktop</span></p>
+                    <p><span class="fa fa-download">Downloads</span></p>
+                    <p><span class="fa fa-file-text">documents</span></p>
+                    <p><span class="fa fa-picture-o ">Picture</span></p>
+                    <p><span class="fa fa-folder ">Folder</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <span class="fa fa-folder-open">Creative Cloud</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <p><span class="fa fa-desktop">Desktop</span></p>
+                    <p><span class="fa fa-download">Downloads</span></p>
+                    <p><span class="fa fa-file-text">documents</span></p>
+                    <p><span class="fa fa-picture-o ">Picture</span></p>
+                    <p><span class="fa fa-folder ">Folder</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <span class="fa fa-desktop">This PC</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    <p><span class="fa fa-desktop">Desktop</span></p>
+                    <p><span class="fa fa-download">Downloads</span></p>
+                    <p><span class="fa fa-file-text">documents</span></p>
+                    <p><span class="fa fa-picture-o ">Picture</span></p>
+                    <p><span class="fa fa-folder ">Folder</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-9 ">
+            <div class="row main-folders">
+              <div class="col-xs-2 folders text-center" ondblclick="openimg()">
+                <p class="contain"><img src="https://media.licdn.com/dms/image/v2/D4D2DAQE-3bE2GmTJUA/profile-treasury-image-shrink_8192_8192/profile-treasury-image-shrink_8192_8192/0/1725822629313?e=1738015200&v=beta&t=G7owRdwYfvXxkxH957Dnu1g_F1Ggg3i4aMkIqlXdH2E" class="img-responsive  center-block" alt=""></p>
+                <span>Photo</span>
+              </div>
+              <div class="col-xs-2 folders text-center" ondblclick="openvid()">
+                <p class="contain"><img src="data:image/jpeg;base64,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" class="img-responsive  center-block" alt=""></p>
+                <span>Video</span>
+              </div>
+              <div class="col-xs-2 folders text-center" ondblclick="opennote()">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_sticky-note_299111.png" class="img-responsive  center-block" alt=""></p>
+                <span>Note</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="col-xs-2 folders text-center">
+                <p class="contain"><img src="https://mohamedelghandour.github.io/windows-10/img/if_folder-blue_285658.svg" class="img-responsive  center-block" style="height: 64px;" alt=""></p>
+                <span>Folder</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="fived-row-win"></div>
+      </div>
+      <div class="resizer"></div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="image-overlay" id="image-overlay">
+      <div class="fluid-container">
+        <div class="first-row-img">
+          <span class="center-text head-over">My Image</span>
+          <div class="right">
+            <i class="fa fa-times" onclick="closeimg()"></i>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="second-row-img">
+          <img src="https://media.licdn.com/dms/image/v2/D4D2DAQE-3bE2GmTJUA/profile-treasury-image-shrink_8192_8192/profile-treasury-image-shrink_8192_8192/0/1725822629313?e=1738018800&v=beta&t=UwsoW_HAzcVNOPsrWvG4QoRB4UKlsVEbON3QzYsJm_8" class="center-block img-responsive" style="height:80vh" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="video-overlay" id="video-overlay">
+      <div class="fluid-container">
+        <div class="first-row-vid">
+          <span class="center-text head-over">My Video</span>
+          <div class="right">
+            <i class="fa fa-times" onclick="closevid()"></i>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="second-row-vid">
+          <!--<video class="center-block" width="" height="" controls>
+                            <source src="img/myExplain_2.mp4" type="video/mp4">
+                            <source src="img/myExplain_2.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                    </video>-->
+          <div style="position:relative;height:0;padding-bottom:56.25%;"><iframe src="https://www.youtube.com/embed/videoseries?si=qp4AnCjjktjNqmhB&amp;list=PLHOzgL8bE7da_4BrMu5Jt0Vd7QLG2c7Y4" style="position:absolute;width: 50%;height: 50vh;left: 25%;" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note-overlay" id="note-overlay">
+      <div class="fluid-container">
+        <div class="first-row-note">
+          <span class="center-text head-over">My Note</span>
+          <div class="right">
+            <i class="fa fa-times" onclick="closenote()"></i>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="second-row-note">
+          <textarea></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-overlay" id="about-overlay">
+      <div class="fluid-container">
+        <div class="first-row-img">
+          <span class="center-text head-over">Info about me</span>
+          <div class="right">
+            <i class="fa fa-times" onclick="closeabout()"></i>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="second-row-abo">
+          <div>
+            <img src="https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/438165628_10229006711131359_2127922044817387763_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=le1fv88cHx0Q7kNvgEgQKge&_nc_zt=23&_nc_ht=scontent-mrs2-2.xx&_nc_gid=AlsDvyTOUxvQ7yVt400t_pi&oh=00_AYC31kZ3Td7uW7tS9TxGjzETDnj4JmATAMW09W_IS_sKBA&oe=67949593" class="img-responsive" alt="">
+            <p>
+              H, My name is Boukhamla driss From Marseille :-D . <br> I'am 32 Years old. <br> I'am a Mediateur Urbain . <br> you can contact me at driss.bou<mark>xxx xxxx </mark>. <br> And you can Contact Me From <a href="hwww.linkedin.com/in/drissboukhamla">Here</a> <br> I love computer, technology <br> I <br> i love music . <br> I like to go in theater . <br> That's why I'm like in my life.
+              <br> just say triple monstre <br> that's way i like it <br> Thanks for your time <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="start-window-fade hidden-start" id="start-window-fade"></div>
+    <div class="start-window hidden-start" id="start-window">
+      <div class="fluid-container" id="container-start">
+        <div class="row">
+          <div class="col-xs-1 first-column">
+            <div class="icon-bottom" id="power" onclick="powerOff()">
+              <i class="fa fa-power-off fa-1x"></i>
+            </div>
+            <div class="icon-bottom">
+              <i class="fa fa-cog fa-1x"></i>
+            </div>
+            <div class="icon-bottom">
+              <i class="fa fa-folder-open-o fa-1x"></i>
+            </div>
+            <div class="icon-bottom">
+              <i class="fa fa-user fa-1x"></i>
+            </div>
+            <div class="icon-bottom open-icon-list">
+              <i class="fa fa-bars fa-1x"></i>
+            </div>
+          </div>
+          <div class="col-xs-3 second-column">
+            <div class="wrap-scroll">
+              <div class="head-med">
+                <small>What I'am Used</small>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/HTML_Logo.png" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">Html, Html 5</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/8b61de4c84033266e15317a6eb9fda2d-css3.png" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">Css, Css 3</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/Javascript-shield.png" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">Pure JavaScript</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/bootstrap-4.svg" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">Bootstrap</small>
+                </div>
+              </div>
+              <div class="head-med mouse-prient">
+                <small>Expand <i class="fa fa-chevron-down fa-1x"></i></small>
+              </div>
+              <div class="head-med">
+                <small>Tools used</small>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/winicon.png" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">Windows 10</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/Firefox.png" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">Firefox</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/chrome1600.png" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">chrome</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/favicon.ico" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">Visual Studio Code</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/Photoshop_CC_icon.png" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">Photoshop cc 2017</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/illustrator.png" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">illustrator cc 2017</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/github-desktop-icon.png" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">github</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/codepen1600.png" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">Codepen</small>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://mohamedelghandour.github.io/windows-10/img/photo.jpg" width="35" height="35" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <small class="media-heading">Upwork</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xs-4 third-column">
+            <div class="head-box">
+              <small>Life at a glance</small>
+            </div>
+            <div class="row">
+              <div class="col-xs-8 col-xs-push-4 box">
+                <div class="box-style">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-envelope fa-2x"></i>
+                  </div>
+                  <div>
+                    Mail
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 col-xs-pull-8 box">
+                <div class="box-style text-center">
+                  <div class="mycontainer">
+                    <div id="day">day</div>
+                    <div id="number-day">number</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-8 box">
+                <div class="box-style">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-internet-explorer fa-2x"></i>
+                  </div>
+                  <div>
+                    Microsoft Edge
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-picture-o fa-2x"></i>
+                  </div>
+                  <div>
+                    Picture
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-sun-o fa-2x"></i>
+                  </div>
+                  <div>
+                    Weather
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-laptop fa-2x"></i>
+                  </div>
+                  <div>
+                    User
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style" style="background:url('https://scontent-mrs2-3.xx.fbcdn.net/v/t39.30808-6/369696839_10227593418759933_3579022285400584022_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=0KYkZpfS2H4Q7kNvgFXYbu7&_nc_zt=23&_nc_ht=scontent-mrs2-3.xx&_nc_gid=AGb_ZQVGUv2CkZ3YPza69nG&oh=00_AYBqYrTxDou210myecKTSM1u1Cp-494-aAXilU3xOIX9Zg&oe=67949BE4');background-size: cover;    background-repeat: no-repeat;
+                                background-position: 39%;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div>
+                    twitter <i class="fa fa-twitter" style="float: right;line-height: 21px;"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-shopping-bag  fa-2x"></i>
+                  </div>
+                  <div>
+                    store
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-skype  fa-2x"></i>
+                  </div>
+                  <div>
+                    skype
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style text-center" style="background:url('https://mohamedelghandour.github.io/windows-10/img/king-care.jpg');background-size: cover;background-position: center;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div style="font-size: 10px;">
+                    Candy Crush
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="head-box">
+              <small>Play And Explore</small>
+            </div>
+            <div class="row">
+              <div class="col-xs-4 box">
+                <div class="box-style" style="background:url('https://mohamedelghandour.github.io/windows-10/img/logo.PNG');background-size: cover;background-position: center;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div style="font-size: 10px;">
+                    Xbox
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-music fa-2x"></i>
+                  </div>
+                  <div style="font-size: 10px;">
+                    Music
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-film fa-2x"></i>
+                  </div>
+                  <div style="font-size: 10px;">
+                    Film
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style" style="background:url('https://mohamedelghandour.github.io/windows-10/img/microsoft-solitaire-collection-02-535x535.png');background-size: cover;background-position: center;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div style="font-size: 10px;">
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style" style="background:url('https://mohamedelghandour.github.io/windows-10/img/1200x630bb.jpg');background-size: cover;background-position: center;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div style="font-size: 10px;">
+                    minecraft
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style" style="background:url('https://mohamedelghandour.github.io/windows-10/img/shortcut-icon-180-393c2144.png');background-size: cover;background-position: center;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div style="font-size: 10px;">
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-8 col-xs-push-4 box">
+                <div class="box-style" style="background:url('https://mohamedelghandour.github.io/windows-10/img/bank.jpg');background-size: 130%;background-position: center;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div>
+                    News
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 col-xs-pull-8 box">
+                <div class="box-style" style="background:url('https://mohamedelghandour.github.io/windows-10/img/maxresdefault_live.jpg');background-size: cover;background-position: center;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div>
+                    Money
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style" style="background:url('https://mohamedelghandour.github.io/windows-10/img/unnamed.png');background-size: cover;background-position: center;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div style="font-size: 10px;">
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style" style="background:url('https://mohamedelghandour.github.io/windows-10/img/onenote-amazon-app-store-100361701-large.jpg');background-size: cover;background-position: center;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div style="font-size:12px;">
+                    OneNote
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 box">
+                <div class="box-style" style="background:url('https://mohamedelghandour.github.io/windows-10/img/office2016logo.png');background-size: cover;background-position: center;">
+                  <div class="icon-bottom text-center" style="margin: 20px;">
+                    <i class="fa fa-twitter fa-2x" style="color: rgba(0,0,0,0);"></i>
+                  </div>
+                  <div style="font-size:10px;">
+                    Office
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="nav navbar-inverse navbar-fixed-bottom footer text-center">
+      <div class="fluid-container">
+        <div class="row">
+          <div class="left">
+            <div class="col-xs-1-me">
+              <div class="icon-bottom strat-win" id="strat-win">
+                <i class="fa fa-windows fa-2x"></i>
+              </div>
+            </div>
+            <div class="col-xs-1-me">
+              <div class="icon-bottom">
+                <i class="fa fa-search fa-2x"></i>
+              </div>
+            </div>
+            <div class="col-xs-1-me">
+              <div class="icon-bottom">
+                <i class="fa fa-envelope fa-2x"></i>
+              </div>
+            </div>
+            <div class="col-xs-1-me" id="a1">
+              <div class="icon-bottom">
+                <i class="fa fa-folder fa-2x"></i>
+              </div>
+            </div>
+            <div class="col-xs-1-me" id="a2">
+              <div class="icon-bottom">
+                <i class="fa fa-picture-o fa-2x"></i>
+              </div>
+            </div>
+            <div class="col-xs-1-me" id="a3">
+              <div class="icon-bottom">
+                <i class="fa fa-film fa-2x"></i>
+              </div>
+            </div>
+            <div class="col-xs-1-me" id="a4">
+              <div class="icon-bottom">
+                <i class="fa fa-file-text-o fa-2x"></i>
+              </div>
+            </div>
+            <div class="col-xs-1-me" id="a5">
+              <div class="icon-bottom">
+                <i class="fa fa-id-card fa-2x"></i>
+              </div>
+            </div>
+            <span class=".clearfix"></span>
+          </div>
+          <div class="right">
+            <div class="col-xs-1-me" id="close-all">
+            </div>
+            <div class="col-xs-1-me">
+              <div class="icon-bottom">
+                <i class="fa fa-bell fa-2x"></i>
+              </div>
+            </div>
+            <div class="date col-xs-1-me">
+              <span id="time">00:00</span>
+              <span id="history">00/00/0000</span>
+            </div>
+            <div class="col-xs-1-me">
+              <div class="icon-bottom">
+                <i class="fa fa-volume-up  fa-2x"></i>
+              </div>
+            </div>
+            <div class="col-xs-1-me">
+              <div class="icon-bottom">
+                <i class="fa fa-chevron-up fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
